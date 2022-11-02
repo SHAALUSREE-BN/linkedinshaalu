@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "linkedinshaalu"
+  },
+  "targets": {
+    "linkedinshaalu": {
+      "hosting": {
+        "venzo-task": [
+          "linkedinshaalu"
+        ]
+      }
+    }
+  }
+}

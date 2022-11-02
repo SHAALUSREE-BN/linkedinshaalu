@@ -1,0 +1,80 @@
+<button class="popup1" (click)="openForm()">
+  <img id = "img-size" src="/assets/pic.jpeg"/>
+  <span class="msgTitle">Messaging</span>
+  <div>
+  <span class="popButtons">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+      <path d="M3 9.5A1.5 1.5 0 114.5 8 1.5 1.5 0 013 9.5zM11.5 8A1.5 1.5 0 1013 6.5 1.5 1.5 0 0011.5 8zm-5 0A1.5 1.5 0 108 6.5 1.5 1.5 0 006.5 8z"></path>
+    </svg>
+  </span>
+  <span class="popButtons">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+      <path d="M15 2.53a1.51 1.51 0 01-.44 1L9.15 9 6 10l1-3.12 5.44-5.44A1.5 1.5 0 0115 2.53zM12 11a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h3V2H5a3 3 0 00-3 3v6a3 3 0 003 3h6a3 3 0 003-3V8h-2z"></path>
+    </svg>    </span>
+  <span class="popButtons">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+      <path d="M15 11L8 6.39 1 11V8.61L8 4l7 4.61z"></path>
+    </svg>
+  </span>
+  </div>
+</button>
+
+<div *ngIf="show" class="chat-popup" id="myForm">
+  <div>
+    <button class="popup2" (click)="closeForm()">
+      <img id = "img-size" src="/assets/pic.jpeg"/>
+      <span class="msgTitle">Messaging</span>
+      <div>
+        <span class="popButtons">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+            <path d="M3 9.5A1.5 1.5 0 114.5 8 1.5 1.5 0 013 9.5zM11.5 8A1.5 1.5 0 1013 6.5 1.5 1.5 0 0011.5 8zm-5 0A1.5 1.5 0 108 6.5 1.5 1.5 0 006.5 8z"></path>
+          </svg>
+        </span>
+        <span class="popButtons">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+            <path d="M15 2.53a1.51 1.51 0 01-.44 1L9.15 9 6 10l1-3.12 5.44-5.44A1.5 1.5 0 0115 2.53zM12 11a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h3V2H5a3 3 0 00-3 3v6a3 3 0 003 3h6a3 3 0 003-3V8h-2z"></path>
+          </svg>    </span>
+        <span class="popButtons">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+            <path d="M1 5l7 4.61L15 5v2.39L8 12 1 7.39z"></path>
+          </svg>
+        </span>
+      </div>
+    </button>
+  </div>
+  <div>
+    <input
+    class="search-button"
+    type="text"
+    placeholder="Search posts"/>
+  </div>
+  <div>
+    <div class="container">
+      <img src="/assets/example-person2.jpeg" alt="Avatar" style="width:100%;">
+      <p class="name">Google</p>
+      <span class="message"> Hello, How is your work going ? </span>
+      <span class="time-right">11:00</span>
+    </div>
+    
+    <div class="container">
+      <img src="/assets/example-person3.jpeg" alt="Avatar" style="width:100%;">
+      <p class="name">Microsoft</p>
+      <span class="message">Lorem ipsum dolor sit amet .</span>
+      <span class="time-right">10:01</span>
+    </div>
+    
+    <div class="container">
+      <img src="/assets/example-person.jpeg" alt="Avatar" style="width:100%;">
+      <p class="name">India</p>
+      <span class="message">Lorem ipsum dolor sit amet .</span>
+      <span class="time-right">5:02</span>
+    </div>
+    
+    <div class="container">
+      <img src="/assets/picture.jpeg" alt="Avatar" style="width:100%;">
+      <p class="name">France</p>
+      <span class="message">Lorem ipsum dolor sit amet .</span>
+      <span class="time-right">7:45</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,111 @@
+.popup1 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  background: white;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid #efefef;
+  cursor: pointer;
+}
+
+.popup2 {
+  width: 100%;
+  background: white;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid #efefef;
+  cursor: pointer;
+}
+
+.name{
+  max-width: 100%;
+}
+
+#img-size{
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: 1px solid #e1e9ee;
+}
+.msgTitle{
+  font-weight: bold;
+  padding: 5px 0px 5px 13px;
+}
+
+.popButtons {
+  position: relative;
+  display: inline-flex;
+  margin-left: 25px;
+}
+
+.search-button {
+  padding: 10px;
+  background: #e1e9ee;
+  border-radius: 2px;
+  width: 90%;
+  border: 1px solid grey;
+  margin: 5px;
+}
+
+    
+.chat-popup {
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  min-height: 90%;
+  background: white;
+  min-width: 20%;
+}
+
+.message{
+  color: grey;
+  font-size: small;
+  overflow: hidden;
+}
+    
+
+    
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+.container {
+  border: 1px solid #ddd;
+  background-color: #fefefe;
+  border-radius: 5px;
+  min-height: 90px;
+  border-top: 0px;
+  height: 60px;
+  padding: 5px;
+}
+    
+.container img {
+  float: left;
+  max-width: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.message{
+  color: #aaa;
+  font-size: small;
+}

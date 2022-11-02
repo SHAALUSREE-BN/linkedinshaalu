@@ -1,0 +1,308 @@
+<body>
+    <div class="container">
+        <div id="left-aside-wrapper">
+            <aside id="left-aside">
+                <div id="profile-card">
+                    <div id="background"></div>
+                    <div id="profile-info">
+                        <img
+                            src="/assets/pic.jpeg"
+                            alt="Profile picture"/>
+                        <strong id="profile-name">Shaalu Sree</strong>
+                        <small>Front-End Developer</small>
+                    </div>
+                    <div id="profile-links">
+                        <a href="#">
+                            <span>
+                                Who's viewed your profile
+                            </span>
+                            <span class="profile-number">
+                                102
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span>
+                                Connections
+                            </span>
+                            <span class="profile-number">
+                                452
+                            </span>
+                        </a>
+                    </div>
+                    <span>Grow your network</span>
+                    <a href="#">
+                        <span>Access exclusive tools & insights</span>
+                        <span id="profile-premium">
+                            <span id="profile-square">■</span> Try Premium
+                            Free for 1 Month</span>
+                    </a>
+                </div>
+                <div id="profile-groups">
+                    <section>
+                        <header>
+                            <span>Recent</span>
+                            <span
+                                class="fas fa-angle-up"></span>
+                        </header>
+                        <ul class="group-list">
+                            <li>
+                                <span class="fas fa-users"></span>
+                                <span>React Developers</span>
+                            </li>
+                            <li>
+                                <span class="fas fa-hashtag"></span>
+                                <span>javascript</span>
+                            </li>
+                            <li>
+                                <span class="fas fa-hashtag"></span>
+                                <span>webdevelopment</span>
+                            </li>
+                            <li>
+                                <span class="fas fa-users"></span>
+                                <span>Javascript Brasil</span>
+                            </li>
+                            <li>
+                                <span class="fas fa-users"></span>
+                                <span>Dog Lovers</span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <header>
+                            <span class="group-title">Groups</span>
+                            <span
+                                class="fas fa-angle-up"
+                            ></span>
+                        </header>
+                        <ul>
+                            <li>
+                                <span class="fas fa-users"></span>
+                                <span id="aaaa">React Developers</span>
+                            </li>
+                            <li>
+                                <span class="fas fa-users"></span>
+                                <span>Javascript Brasil</span>
+                            </li>
+                            <li>
+                                <span class="fas fa-users"></span>
+                                <span>Dog Lovers</span>
+                            </li>
+                        </ul>
+                        <div class="group-list">
+                            <a href="#">See all</a>
+                        </div>
+                    </section>
+                    <section>
+                        <header>
+                            <span class="group-title">
+                                Followed Hashtags</span>
+                            <span
+                                class="fas fa-angle-up"></span>
+                        </header>
+                        <ul>
+                            <li>
+                                <span class="fas fa-hashtag"></span>
+                                <span>javascript</span>
+                            </li>
+                            <li>
+                                <span class="fas fa-hashtag"></span>
+                                <span>webdevelopment</span>
+                            </li>
+                        </ul>
+                        <a href="#">See all</a>
+                    </section>
+                    <a href="#">Discover more</a>
+                </div>
+            </aside>
+        </div>
+        <!-- MAIN -->
+        <div id="main-wrapper">
+            <main id="main-section">
+                <div id="share-box">
+                    <div id="button-box">
+                        <button><input class="wrPost" type="text" [(ngModel)]="postMsg" id="btn-post" placeholder="Share a Post" (keyup.enter)="writePost()" /></button>
+                        <button id="btn-picture">
+                            <span class="fas fa-camera"></span>
+                        </button>
+                        <button id="btn-video">
+                            <span class="fas fa-video"></span>
+                        </button>
+                        <button id="btn-document">
+                            <span class="fas fa-file"></span>
+                        </button>
+                    </div>
+                    <div id="link-box">
+                        <a href="#">Write an article</a>
+                        <span>on LinkedIn</span>
+                    </div>
+                </div>
+
+
+                <div id="feed-sort">
+                    <hr />
+                    <button>
+                        <span>Sort by:</span>
+                        <strong>Top</strong>
+                        <span class="fas fa-sort-down"></span>
+                    </button>
+                </div>
+                <article *ngFor="let i of this._postsList">
+                    <div id="post-author">
+                        <a href="#">
+                            <div>
+                                <img
+                                    src={{i.dp}}
+                                    alt=""/>
+                                <div>
+                                    <div>
+                                        <strong id="post-author-name">{{i.name}}</strong>
+                                        <span>
+                                            <span>&nbsp;·&nbsp;</span>
+                                            {{i.type}}</span >
+                                    </div>
+                                    <span
+                                        >{{i.job}}</span>
+                                    <span>{{i.timestamp | date: 'dd/MM/yyyy'}}</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div>
+                            <span class="fas fa-circle"></span>
+                            <span class="fas fa-circle"></span>
+                            <span class="fas fa-circle"></span>
+                        </div>
+                    </div>
+                    <div id="post-data">
+                        <p>
+                            {{i.data}}
+                        </p>
+                        <p id="post-translation">
+                            <button>See translation</button>
+                        </p>
+                        <img src={{i.img}} alt="" />
+                    </div>
+                    <div id="post-interactions">
+                        <div id="interactions-amount">
+                            <span
+                                id="like-icon"
+                                class="fas fa-thumbs-up fa-flip-horizontal"></span>
+                            <span
+                                id="heart-icon"
+                                class="fas fa-heart"></span>
+                            <span id="amount-info" >23 <span>&nbsp;·&nbsp;</span> 4
+                                Comments</span>
+                        </div>
+                        <div id="interactions-btns">
+                            <button>
+                                <span
+                                    class="far fa-thumbs-up fa-flip-horizontal"></span>
+                                <span>Like</span>
+                            </button>
+                            <button>
+                                <span
+                                    class="far fa-comment-dots fa-flip-horizontal"></span>
+                                <span>Comment</span>
+                            </button>
+                            <button>
+                                <span class="far fa-share-square"></span>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </div>
+        <!-- RIGHT ASIDE -->
+        <aside id="right-aside">
+            <div id="rec-section">
+                <div>
+                    <header>
+                        <span>Add to your feed</span>
+                    </header>
+                    <div>
+                        <div>
+                            <img src="/assets/mongo.jpeg" alt="" />
+                            <div>
+                                <strong>MongoDB</strong>
+                                <small>Company - Computer Software</small>
+                            </div>
+                            <button>
+                                <span class="fas fa-plus"></span>
+                                <span>Follow</span>
+                            </button>
+                        </div>
+                        <div>
+                            <img src="/assets/react.png" alt="" />
+                            <div>
+                                <strong>#reactjs</strong>
+                            </div>
+                            <button>
+                                <span class="fas fa-plus"></span>
+                                <span>Follow</span>
+                            </button>
+                        </div>
+                        <div>
+                            <img src="/assets/example-person.jpeg" alt="" />
+                            <div>
+                                <strong>John Smith</strong>
+                                <small>Entrepreneur and Marketing
+                                    Specialist</small>
+                            </div>
+                            <button>
+                                <span class="fas fa-plus"></span>
+                                <span>Follow</span>
+                            </button>
+                        </div>
+                    </div>
+                    <a href="#">View all recommendations</a>
+                </div>
+            </div>
+            <div id="linkedin-section">
+                <section>
+                    <small>Ad</small>
+                    <a href="#">
+                        <span
+                            >Maurício, unlock your full potential with
+                            Linkedin Premium</span>
+                        <div>
+                            <img src="/assets/pic.jpeg" alt="" />
+                            <img
+                                id="linkedin-key"
+                                src="/assets/linkedin-ad.png"
+                                alt="" />
+                        </div>
+                        <strong>
+                            See who's viewed your profile in the last 90
+                            days
+                        </strong>
+                        <div>
+                            <button>Try for free</button>
+                        </div>
+                    </a>
+                </section>
+                <footer>
+                    <ul>
+                        <li>About</li>
+                        <li>Help Center</li>
+                        <li>
+                            Privacy & Terms<span
+                                class="fas fa-angle-down"
+                            ></span>
+                        </li>
+                        <li>Advertising</li>
+                        <li>
+                            Business Services
+                            <span class="fas fa-angle-down"></span>
+                        </li>
+                        <li>Get the LinkedIn app</li>
+                        <li>More</li>
+                    </ul>
+                    <div>
+                        <strong>Linked<span>in</span></strong>
+                        <span>LinkedIn Corporation © 2019</span>
+                    </div>
+                </footer>
+            </div>
+        </aside>
+    </div>
+</body>

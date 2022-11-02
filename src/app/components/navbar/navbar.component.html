@@ -1,0 +1,88 @@
+<head>
+    <script src="https://kit.fontawesome.com/3055f91a99.js"></script>
+</head>
+<!-- HEADER -->
+<header id="main-header">
+    <div>
+        <div>
+            <img
+                id="header-logo"
+                src="/assets/linkedin.png"
+                alt="LinkedIn"/>
+            <img
+                id="header-picture-menu"
+                src="/assets/pic.jpeg"
+                alt="Profile picture"/>
+            <span id="header-picture-menu-bars">
+                <span class="fas fa-bars"></span>
+            </span>
+
+            <div>
+                <input
+                    id="search"
+                    type="text"
+                    placeholder="       Search posts"
+                    [(ngModel)]="searchTag" (keyup.enter)="search()" />
+                <span id="search-button" class="fas fa-search"></span>
+            </div>
+            <span class="fas fa-comments"></span>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <div id="home" class="selected">
+                        <span class="fas fa-home"></span>
+                        <span class="nav-item-text">Home</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="fas fa-user-friends"></span>
+                        <span class="nav-item-text">My Network</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="fas fa-suitcase"></span>
+                        <span class="nav-item-text">Jobs</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="fas fa-envelope"></span>
+                        <span class="nav-item-text">Messaging</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="fas fa-bell"></span>
+                        <span class="nav-item-text">Notifications</span>
+                    </div>
+                </li>
+                <li>
+                    <div id="right-border">
+                        <img
+                            src="/assets/pic.jpeg"
+                            alt="Profile picture" />
+
+                        <span class="nav-item-text">
+                            Me<span class="fas fa-caret-down"> </span
+                        ></span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="fas fa-th"></span>
+
+                        <span class="nav-item-text">Work<span class="fas fa-caret-down"> </span></span>
+                    </div>
+                </li>
+                <li id="premium">
+                    <div>
+                        <a href="#">Try Premium Free for 1 Month</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
