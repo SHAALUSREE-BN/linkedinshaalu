@@ -1,0 +1,47 @@
+[debug] [2022-11-02T14:05:32.726Z] ----------------------------------------------------------------------
+[debug] [2022-11-02T14:05:32.727Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-11-02T14:05:32.727Z] CLI Version:   11.15.0
+[debug] [2022-11-02T14:05:32.727Z] Platform:      darwin
+[debug] [2022-11-02T14:05:32.727Z] Node Version:  v18.12.0
+[debug] [2022-11-02T14:05:32.729Z] Time:          Wed Nov 02 2022 19:35:32 GMT+0530 (India Standard Time)
+[debug] [2022-11-02T14:05:32.729Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-02T14:05:32.759Z] Field ".hosting" in "firebase.json" is possibly invalid: should be object
+[debug] [2022-11-02T14:05:32.759Z] Object ".hosting[0]" in "firebase.json" is missing required property: {"missingProperty":"target"}
+[debug] [2022-11-02T14:05:32.759Z] Object ".hosting[0]" in "firebase.json" is missing required property: {"missingProperty":"site"}
+[debug] [2022-11-02T14:05:32.759Z] Field ".hosting[0]" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2022-11-02T14:05:32.759Z] Field ".hosting" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2022-11-02T14:05:32.762Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-02T14:05:32.762Z] > authorizing via signed-in user (musixserial@gmail.com)
+[debug] [2022-11-02T14:05:32.762Z] [iam] checking project linkedinshaalu for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2022-11-02T14:05:32.762Z] > refreshing access token with scopes: []
+[debug] [2022-11-02T14:05:32.763Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-11-02T14:05:32.763Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-02T14:05:33.083Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-11-02T14:05:33.083Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-02T14:05:33.127Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedinshaalu:testIamPermissions [none]
+[debug] [2022-11-02T14:05:33.128Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedinshaalu:testIamPermissions x-goog-quota-user=projects/linkedinshaalu
+[debug] [2022-11-02T14:05:33.128Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedinshaalu:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2022-11-02T14:05:34.826Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedinshaalu:testIamPermissions 200
+[debug] [2022-11-02T14:05:34.826Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedinshaalu:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2022-11-02T14:05:34.827Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/linkedinshaalu [none]
+[debug] [2022-11-02T14:05:35.539Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/linkedinshaalu 200
+[debug] [2022-11-02T14:05:35.539Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/linkedinshaalu {"projectId":"linkedinshaalu","projectNumber":"551028335724","displayName":"linkedinshaalu","name":"projects/linkedinshaalu","resources":{"hostingSite":"linkedinshaalu","realtimeDatabaseInstance":"linkedinshaalu-default-rtdb"},"state":"ACTIVE","etag":"1_e4ca11ef-9324-402b-8e29-44c039fff6d0"}
+[debug] [2022-11-02T14:05:35.539Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/linkedinshaalu [none]
+[debug] [2022-11-02T14:05:36.422Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/linkedinshaalu 200
+[debug] [2022-11-02T14:05:36.423Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/linkedinshaalu {"projectId":"linkedinshaalu","projectNumber":"551028335724","displayName":"linkedinshaalu","name":"projects/linkedinshaalu","resources":{"hostingSite":"linkedinshaalu","realtimeDatabaseInstance":"linkedinshaalu-default-rtdb"},"state":"ACTIVE","etag":"1_e4ca11ef-9324-402b-8e29-44c039fff6d0"}
+[info] 
+[info] === Deploying to 'linkedinshaalu'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2022-11-02T14:05:36.427Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/linkedinshaalu/locations/-/instances/linkedinshaalu-default-rtdb [none]
+[debug] [2022-11-02T14:05:37.282Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/linkedinshaalu/locations/-/instances/linkedinshaalu-default-rtdb 200
+[debug] [2022-11-02T14:05:37.282Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/linkedinshaalu/locations/-/instances/linkedinshaalu-default-rtdb {"name":"projects/551028335724/locations/us-central1/instances/linkedinshaalu-default-rtdb","project":"projects/551028335724","databaseUrl":"https://linkedinshaalu-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2022-11-02T14:05:37.284Z] >>> [apiv2][query] PUT https://linkedinshaalu-default-rtdb.firebaseio.com/.settings/rules.json dryRun=true
+[debug] [2022-11-02T14:05:37.284Z] >>> [apiv2][body] PUT https://linkedinshaalu-default-rtdb.firebaseio.com/.settings/rules.json "{\n  \"rules\": {\n    \".read\": false,\n    \".write\": false\n  }\n}"
+[debug] [2022-11-02T14:05:38.143Z] <<< [apiv2][status] PUT https://linkedinshaalu-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2022-11-02T14:05:38.143Z] <<< [apiv2][body] PUT https://linkedinshaalu-default-rtdb.firebaseio.com/.settings/rules.json {"status":"ok"}
+[info] ✔  database: rules syntax for database linkedinshaalu-default-rtdb is valid 
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
